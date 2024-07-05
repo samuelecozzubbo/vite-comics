@@ -14,15 +14,24 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <main>
-    Parte centrale
-  </main>
-  <AppShop/>
-  <AppFooter/>
+    <body>
+        <AppHeader />
+        <main>
+            Parte centrale
+        </main>
+        <AppShop/>
+        <AppFooter/>
+    
+    </body>
 </template>
+  
 
 <style lang="scss">
+body{
+    background-color: rgb(33, 33, 33);
+    margin: 0;
+    padding-top: 20px;
+}
 main{
     background-color: black;
     width: 100%;

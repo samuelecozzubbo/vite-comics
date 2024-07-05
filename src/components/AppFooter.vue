@@ -55,6 +55,21 @@
                 </div>
             </div>
         </section>
+        <section class="footer-bottom">
+            <div class="container">
+                <button>SIGN-UP NOW!</button>
+                <div class="social-links">
+                    <h4>FOLLOW US</h4>
+                    <ul>
+                        <li><a href="#"><img src="/img/footer-facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="/img/footer-twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="/img/footer-youtube.png" alt="YouTube"></a></li>
+                        <li><a href="#"><img src="/img/footer-pinterest.png" alt="Pinterest"></a></li>
+                        <li><a href="#"><img src="/img/footer-periscope.png" alt="Periscope"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </footer>
 
 </template>
@@ -103,5 +118,60 @@
     }
 }
 
+.footer-bottom {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 0;
 
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        background-color: #1a1a1a;
+        color: #fff;
+        border: solid 2px #026bb5;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+          background-color: #026bb5;
+        }
+      }
+
+      .social-links {
+        display: flex;
+        align-items: center;
+
+        h4 {
+          margin-right: 10px;
+          font-size: 14px;
+          color: #026bb5;
+        }
+
+        ul {
+          display: flex;
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-right: 10px;
+
+            a {
+              display: block;
+              width: 24px;
+              height: 24px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            }
+        }
+        }
+    }
+}
 </style>

@@ -86,6 +86,11 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/mixings' as *;
 
+header{
+    background-color: white;
+    padding: 10px 0
+}
+
 .container,ul{
     @include center(space-between);
 }
