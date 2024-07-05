@@ -6,7 +6,27 @@ export default {
             links: [
                 {
                     text: "DIGITAL COMICS",
-                    imgUrl: "../assets/img/buy-comics-digital-comics.png",
+                    imgUrl: "/img/buy-comics-digital-comics.png",
+                    current: false,
+                },
+                {
+                    text: "DC MERCHANDISE",
+                    imgUrl: "/img/buy-comics-merchandise.png",
+                    current: false,
+                },
+                {
+                    text: "SUBSCRIPTION",
+                    imgUrl: "/img/buy-comics-subscriptions.png",
+                    current: false,
+                },
+                {
+                    text: "COMIC SHOP LOCATOR",
+                    imgUrl: "/img/buy-comics-shop-locator.png",
+                    current: false,
+                },
+                {
+                    text: "DC POWER VISA",
+                    imgUrl: "/img/buy-dc-power-visa.svg",
                     current: false,
                 },
             ]
@@ -20,7 +40,10 @@ export default {
         <div class="container">
             <ul>
                 <li v-for="(link,index) in links" :key="index">
-                    <img :src="link.imgUrl" alt="img">
+                    <div class="img-container">
+                        <img :src="link.imgUrl" alt="img">
+                    </div>
+                    <span>{{ link.text }}</span>
                 </li>
             </ul>
 
@@ -38,7 +61,24 @@ section{
     min-height: 50px;
 }
 
+
 .container{
-    @include center(space-between)
+    @include center(horizontal);
+    padding: 30px 0;
+    
+    ul{
+        width: 100%;
+       @include center(space-between);
+    }
+
+    li{
+       @include center(horizontal);
+
+    }
+
+    .img-container{
+        width: 40px;
+    }
 }
+
 </style>
