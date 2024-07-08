@@ -19,19 +19,18 @@ export default{
 @use '../styles/partials/mixings' as *;
 
 .prod-card{
-    text-align: center;
-    flex-basis: calc(100% / 6);
-    border: 2px solid lighten(white,70%);
+    flex-basis: calc(100% / 6 - 30px);
+    margin-bottom: 20px;
     h3{
-        color: white;
+        color: rgb(209, 209, 209);
+        font-size: 0.9em;
+        margin-top: 10px;
     }
 
     img{
         display: block;
-        width: 100px;
-        height: 100px; 
-        object-fit: cover; 
-        margin: 0 auto; 
+        aspect-ratio: 1;
+        object-fit: cover;
     }
 }
 </style>
