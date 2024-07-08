@@ -102,6 +102,9 @@ ul{
     a{
         text-decoration: none;
         color: #55595C;
+        &:hover {
+                color: #0282F9;
+            }
     }
 }
 
