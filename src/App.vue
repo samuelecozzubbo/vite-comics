@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppShop from './components/AppShop.vue'
 import AppFooter from './components/AppFooter.vue'
+import comicsList from './components/comicsList.vue';
 
 export default {
   name: 'App',
@@ -9,6 +10,7 @@ export default {
     AppHeader,
     AppShop,
     AppFooter,
+    comicsList,
   }
 }
 </script>
@@ -17,7 +19,7 @@ export default {
     <body>
         <AppHeader />
         <main>
-            Parte centrale
+            <comicsList/>
         </main>
         <AppShop/>
         <AppFooter/>

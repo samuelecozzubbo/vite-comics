@@ -90,11 +90,18 @@ export default {
 <template>
     <section class="products">
         <div class="boxes container">
-
+            <card v-for="(comic,i) in comics" :key="i"
+            :details="comic"/>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/general.scss' as *;
+@use '../styles/partials/mixings' as *;
 
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
 </style>
